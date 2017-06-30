@@ -130,15 +130,20 @@
                 <div class="col-md-6 col-md-offset-3">
                     <h3>Get started with accountaBull, absolutely free.</h3>
                     <p>Sign up & we'll follow up with instructions on how to download the app.</p>
-                    <form class="signup-form" action="https://formspree.io/commit.bull@gmail.com" method="POST" role="form">
+
+                    <form class="signup-form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScR5pDADUE8mHWDJLQvtvMR_lZNF6BYCqcPV27cpayBfOX9Ow/formResponse?" 
+                    target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="form-input-group">
-                            <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email" required>
+                            <i class="fa fa-envelope"></i><input type="text" name="entry.556577218" id="entry.556577218" placeholder="Enter your email" required><br>
                         </div>
                         <div class="form-input-group">
-                            <i class="fa fa-star-o"></i><input type="text" class="" placeholder="What do you want to achieve? (optional)" optional>
+                            <i class="fa fa-star-o"></i><input type="text" name="entry.63488774" id="entry.63488774" placeholder="What do you want to achieve? (optional)" optional>
                         </div>
-                        <button type="submit" class="btn-fill sign-up-btn">Sign up for free</button>
+                        <input type="hidden" name="entry.2017189427" id="entry.2017189427" value="generic">
+                        <input type="submit" value="Submit" class="btn-fill sign-up-btn">
                     </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
@@ -186,6 +191,15 @@
     e.src='//www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Thanks! We will email you with instructions on how to get started with accountabull.');
+    });
     </script>
 </body>
 </html>
