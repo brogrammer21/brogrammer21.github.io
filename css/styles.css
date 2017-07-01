@@ -346,6 +346,17 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
+#weight {
+  background:
+    linear-gradient(
+      rgba(22, 23, 26, 0.5), 
+      rgba(22, 23, 26, 0.5)
+    ), 
+    url("../img/scale.jpg") center center;
+    background-size: cover;
+    min-height: 750px;
+}
+
 .hero {
   min-height: 750px;
   background:
@@ -641,6 +652,16 @@ Features-stack
 /* ==========================================================================
 .testimonial-slider
 ========================================================================== */
+#statistics-weight {
+  background:
+    linear-gradient(
+      rgba(22, 23, 26, 0.6), 
+      rgba(22, 23, 26, 0.6)
+    ), 
+    url("../img/food.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 .testimonial-slider {
   background: url("../img/testimonials-bg.jpg") no-repeat center center;
   background-size: cover; }
@@ -654,8 +675,8 @@ Features-stack
     border: solid 3px #fff;
     background-color: #fff; }
     .testimonial-slider .avatar img {
-      width: 82px;
-      height: auto; }
+      width: 75px;
+      height: 75px; }
   .testimonial-slider h2 {
     color: #fff;
     font-size: 40px;
